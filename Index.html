@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Shobhit Saxena — professional profile, technical journey, projects, learning and Bharat Nexus, an AI-powered citizen-centric digital platform.">
+<meta name="theme-color" content="#0b0d12">
+
+<!-- OG Meta Tags (For Social Media Preview) -->
+<meta property="og:title" content="Shobhit Saxena | AI & Software Developer">
+<meta property="og:description" content="Explore my professional journey, technology stack, and projects like Bharat Nexus.">
+<meta property="og:image" content="profile.jpg">
+<meta property="og:type" content="website">
+
+<title>Shobhit Saxena — Professional Profile</title>
+
+<!-- Google tag (gtag.js) - Google Analytics (Replace G-XXXXXXXXXX with your actual ID later) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<!-- Custom Favicon using SVG inline data -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%235b5cf0'/><stop offset='50%' stop-color='%238b5cf6'/><stop offset='100%' stop-color='%2306b6d4'/></linearGradient></defs><rect width='40' height='40' rx='12' fill='url(%23grad)' opacity='0.2'/><path d='M12 13h10c2.76 0 5 2.24 5 5s-2.24 5-5 5h-4c-2.76 0-5 2.24-5 5s2.24 5 5 5h10' stroke='url(%23grad)' stroke-width='4' stroke-linecap='round' fill='none'/><path d='M28 27h-10c-2.76 0-5-2.24-5-5s2.24-5 5-5h4c2.76 0 5-2.24 5-5s-2.24-5-5-5h-10' stroke='url(%23grad)' stroke-width='4' stroke-linecap='round' fill='none'/></svg>">
+
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--surface2:#eef1f5;--text:#111318;--muted:#626a78;
+  --line:#dfe3e9;--accent:#5b5cf0;--accent2:#8b5cf6;--shadow:0 20px 60px rgba(15,20,35,.10);
+  --radius:24px;--max:1180px;
+}
+[data-theme="dark"]{
+  --bg:#090b10;--surface:#10131a;--surface2:#171b24;--text:#f4f6fa;--muted:#a4adbd;
+  --line:#252b36;--shadow:0 25px 70px rgba(0,0,0,.35);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, var(--accent), var(--accent2)); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent2); }
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);width:min(var(--max),calc(100% - 28px));z-index:1000;background:color-mix(in srgb,var(--surface) 82%,transparent);backdrop-filter:blur(18px);border:1px solid var(--line);border-radius:18px;padding:10px 14px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 12px 35px rgba(0,0,0,.07)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.03em}
+
+/* Navbar Logo Style */
+.logo-mark{width:36px;height:36px;border-radius:11px;display:flex;place-items:center;background:transparent;border:none;box-shadow:none;padding:0;}
+
+.navlinks{display:flex;gap:4px;align-items:center}
+.navlinks a{padding:9px 12px;color:var(--muted);font-size:14px;border-radius:10px}
+.navlinks a:hover{background:var(--surface2);color:var(--text)}
+.theme{border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:10px;width:38px;height:38px;cursor:pointer}
+.hero{min-height:100vh;display:grid;align-items:center;padding:150px 0 90px;position:relative}
+.hero:before{content:"";position:absolute;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(91,92,240,.16),transparent 68%);right:-220px;top:80px;pointer-events:none}
+.grid2{display:grid;grid-template-columns:1.35fr .65fr;gap:70px;align-items:center}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--muted);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+h1{font-size:clamp(48px,7vw,86px);line-height:.98;letter-spacing:-.065em;margin:22px 0}
+.gradient{background:linear-gradient(100deg,var(--text),var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* Blinking Cursor for Typing Effect */
+.cursor {display:inline-block; width:4px; height:1em; background-color:var(--accent); vertical-align:middle; margin-left:4px; animation:blink 1s infinite;}
+@keyframes blink { 0%, 100% {opacity:1;} 50% {opacity:0;} }
+
+.lead{font-size:20px;color:var(--muted);max-width:760px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:13px 18px;border-radius:13px;border:1px solid var(--line);background:var(--surface);font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:6px; cursor:pointer;}
+.btn.primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+.btn:hover{transform:translateY(-2px)}
+.identity{border:1px solid var(--line);background:var(--surface);border-radius:30px;padding:28px;box-shadow:var(--shadow)}
+
+/* Profile Photo Style */
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%; 
+  margin: 0 auto 22px auto;
+  overflow: hidden;
+  border: 4px solid var(--surface); 
+  box-shadow: 0 0 0 2px var(--accent), 0 10px 25px rgba(91,92,240, 0.25);
+  background: var(--surface2);
+}
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+.identity h2{font-size:25px;letter-spacing:-.04em}.identity p{color:var(--muted);margin-top:5px}
+.meta{display:grid;gap:12px;margin-top:22px}.meta div{display:flex;justify-content:space-between;gap:15px;padding-top:12px;border-top:1px solid var(--line);font-size:14px}.meta span:first-child{color:var(--muted)}
+section{padding:110px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:40px}.kicker{color:var(--accent);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.16em}.section-head h2{font-size:clamp(34px,5vw,58px);letter-spacing:-.055em;line-height:1.02;margin-top:10px}.section-head p{max-width:450px;color:var(--muted)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:22px}.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:0 10px 35px rgba(10,15,25,.04)}.card p{color:var(--muted);font-size:16px}.card p+p{margin-top:15px}
+.pill-grid{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}.pill{padding:9px 12px;border:1px solid var(--line);background:var(--surface2);border-radius:999px;font-size:13px;font-weight:700}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.skill{padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--surface)}.skill b{display:block;margin-bottom:7px}.skill span{font-size:13px;color:var(--muted)}
+.focus{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.focus .card{min-height:220px}.icon{font-size:28px;margin-bottom:22px}.card h3{font-size:20px;letter-spacing:-.025em;margin-bottom:8px}
+
+.project{background:linear-gradient(135deg,#10131a,#181b2a);color:#fff;border-radius:34px;padding:44px;border:1px solid #2b3140;box-shadow:0 30px 80px rgba(0,0,0,.2); margin-bottom:40px;}
+.project .kicker{color:#a7a8ff}.project-top{display:flex;justify-content:space-between;gap:25px;align-items:start}.project h2{font-size:clamp(40px,6vw,70px);letter-spacing:-.06em;line-height:1}.project .tagline{font-size:19px;color:#b8bfcc;max-width:650px;margin-top:15px}.project-badge{border:1px solid #343b4b;padding:10px 14px;border-radius:999px;font-size:12px;color:#c8ced9;white-space:nowrap}
+.nexus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:35px}.nexus{border:1px solid #2b3140;background:#151923;border-radius:20px;padding:24px}.nexus h3{margin:8px 0}.nexus p{font-size:14px;color:#aeb6c4}.workflow{margin-top:20px;border-top:1px solid #2b3140;padding-top:25px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}.step{padding:9px 12px;border:1px solid #343b4b;border-radius:999px;font-size:13px;color:#cbd2de}.arrow{color:#6f7786}
+.tech-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}.tech{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;border:1px solid #343b4b;padding:8px 10px;border-radius:9px;color:#cbd2de}
+.education{position:relative;max-width:900px}.edu{display:grid;grid-template-columns:150px 1fr;gap:30px;padding:25px 0;border-top:1px solid var(--line)}.edu .year{font-weight:800;color:var(--accent)}.edu h3{font-size:20px}.edu p{color:var(--muted);font-size:14px;margin-top:4px}
+.interests{display:grid;grid-template-columns:1fr 1fr;gap:18px}.interest{padding:28px;border:1px solid var(--line);border-radius:22px;background:var(--surface)}.interest h3{margin-bottom:7px}.interest p{color:var(--muted)}
+
+/* Contact Form Grid Layout */
+.contact-wrapper {display:grid; grid-template-columns: 1fr 1fr; gap:40px; align-items:start;}
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:32px;padding:50px;}.contact h2{font-size:clamp(36px,5vw,60px);letter-spacing:-.055em;line-height:1}.contact p{color:var(--muted);margin-top:12px;max-width:650px}.links{display:flex;gap:10px;flex-wrap:wrap;justify-content:start; margin-top:30px;}
+.form-group {margin-bottom: 20px;}
+.form-group label {display:block; font-size:14px; font-weight:700; margin-bottom:8px;}
+.form-group input, .form-group textarea {width:100%; padding:14px 18px; border-radius:12px; border:1px solid var(--line); background:var(--bg); color:var(--text); font-family:inherit; font-size:15px; outline:none;}
+.form-group input:focus, .form-group textarea:focus {border-color:var(--accent);}
+.form-group textarea {resize:vertical; min-height:120px;}
+
+footer{padding:35px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.footer{display:flex;justify-content:space-between;gap:20px}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2));z-index:2000}
+.reveal{opacity:0;transform:translateY(22px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+
+/* Scroll to Top Button */
+#scrollToTop {position:fixed; bottom:30px; right:30px; width:45px; height:45px; border-radius:50%; background:var(--text); color:var(--bg); border:none; font-size:20px; cursor:pointer; display:flex; align-items:center; justify-content:center; opacity:0; visibility:hidden; transition:0.3s; z-index:1000; box-shadow:0 8px 20px rgba(0,0,0,0.15);}
+#scrollToTop.visible {opacity:1; visibility:visible;}
+#scrollToTop:hover {transform:translateY(-3px); background:var(--accent);}
+
+@media(max-width:900px){.grid2,.about,.interests, .contact-wrapper{grid-template-columns:1fr}.skills{grid-template-columns:repeat(2,1fr)}.focus,.nexus-grid{grid-template-columns:1fr}.navlinks a{display:none}.section-head,.project-top{display:block}.project-badge{display:inline-block;margin-top:20px}.contact .links{justify-content:start;margin-top:25px}.identity{max-width:600px}}
+@media(max-width:560px){.container{width:min(var(--max),calc(100% - 24px))}nav{top:8px}.logo span{font-size:14px}.hero{padding-top:120px}h1{font-size:50px}.lead{font-size:17px}.skills{grid-template-columns:1fr}.edu{grid-template-columns:1fr;gap:5px}.project,.contact{padding:28px}.footer{display:block}.footer span{display:block;margin-top:8px} #scrollToTop{bottom:20px; right:20px;} h1{line-height: 1.1;}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTop" aria-label="Scroll to top">↑</button>
+
+<nav>
+  <a class="logo" href="#home">
+    <div class="logo-mark">
+      <svg width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="advLogoGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#5b5cf0" />
+            <stop offset="50%" stop-color="#8b5cf6" />
+            <stop offset="100%" stop-color="#06b6d4" />
+          </linearGradient>
+        </defs>
+        <rect width="40" height="40" rx="12" fill="url(#advLogoGrad1)" opacity="0.15" />
+        <rect x="0.5" y="0.5" width="39" height="39" rx="11.5" stroke="url(#advLogoGrad1)" stroke-opacity="0.4" stroke-width="1" />
+        <path d="M12 13H22C24.7614 13 27 15.2386 27 18C27 20.7614 24.7614 23 22 23H18C15.2386 23 13 25.2386 13 28C13 30.7614 15.2386 33 18 33H28" stroke="url(#advLogoGrad1)" stroke-width="3" stroke-linecap="round" />
+        <path d="M28 27H18C15.2386 27 13 24.7614 13 22C13 19.2386 15.2386 17 18 17H22C24.7614 17 27 14.7614 27 12C27 9.23858 24.7614 7 22 7H12" stroke="url(#advLogoGrad1)" stroke-width="3" stroke-linecap="round" />
+      </svg>
+    </div>
+    <span>Shobhit Saxena</span>
+  </a>
+  <div class="navlinks">
+    <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#focus">Focus</a><a href="#work">Work</a><a href="#education">Education</a><a href="#connect">Connect</a>
+    <button class="theme" id="theme" aria-label="Toggle theme">☾</button>
+  </div>
+</nav>
+
+<main>
+<section class="hero" id="home">
+<div class="container grid2">
+  <div class="reveal">
+    <div class="eyebrow"><span class="dot"></span> Digital Profile · Technology · Learning</div>
+    <!-- Updated with Typing Animation structure -->
+    <h1>Building ideas into<br><span class="gradient" id="typewriter"></span><span class="cursor">|</span></h1>
+    <p class="lead">I’m Shobhit Saxena — a BCA graduate and technology-focused learner exploring software development, AI, data, web technologies and practical digital products. This website is a window into my professional journey, the things I build, and the direction I’m growing toward.</p>
+    <div class="actions">
+      <a class="btn primary" href="#work">Explore my work →</a>
+      <a class="btn" href="shobhit_resume.pdf" target="_blank" rel="noopener">📄 Resume</a>
+      <a class="btn" href="#about">Know my journey</a>
+    </div>
+  </div>
+  <aside class="identity reveal">
+    
+    <div class="profile-photo">
+      <img src="profile.jpg" alt="Shobhit Saxena">
+    </div>
+
+    <h2>Shobhit Saxena</h2>
+    <p>Technology · Software · AI · Continuous Learning</p>
+    <div class="meta">
+      <div><span>Based in</span><b>Pilibhit, Uttar Pradesh, India</b></div>
+      <div><span>Education</span><b>BCA · LLB (ongoing)</b></div>
+      <div><span>Core project</span><b>Bharat Nexus</b></div>
+    </div>
+  </aside>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<div class="section-head reveal"><div><div class="kicker">01 · About</div><h2>A professional journey<br>still being written.</h2></div><p>More than a résumé, this is a living snapshot of how I learn, build, experiment and think about technology.</p></div>
+<div class="about">
+<div class="card reveal"><h3>Who I am</h3><p>I’m Shobhit Saxena, a BCA graduate with a growing interest in the intersection of software, artificial intelligence, data and user-focused digital products.</p><p>My approach is practical: learn a concept, build something with it, understand what works, identify what can be improved, and keep iterating.</p><p>Alongside technology, I am pursuing LLB, which adds another dimension to my interest in systems, public services, information and the way technology can make complex processes easier to understand.</p></div>
+<div class="card reveal"><h3>How I work & learn</h3><p>I enjoy moving between different layers of a product—from interface and user experience to Python logic, APIs, data persistence and AI integration.</p><p>I also use modern AI-assisted development tools as a coding copilot for exploration, boilerplate, debugging and experimentation while keeping the product vision, feature direction and problem-solving process central to my own work.</p><div class="pill-grid"><span class="pill">Build</span><span class="pill">Experiment</span><span class="pill">Analyse</span><span class="pill">Learn</span><span class="pill">Improve</span><span class="pill">Create</span></div></div>
+</div>
+</div>
+</section>
+
+<section id="expertise">
+<div class="container">
+<div class="section-head reveal"><div><div class="kicker">02 · Technical Expertise</div><h2>The toolkit I’m<br>building with.</h2></div><p>A broad, evolving technology stack focused on practical implementation rather than collecting labels.</p></div>
+<div class="skills">
+<div class="skill reveal"><b>Web Development</b><span>HTML · CSS · JavaScript · Streamlit</span></div>
+<div class="skill reveal"><b>Programming</b><span>Python · C · C++ · Java</span></div>
+<div class="skill reveal"><b>Data & Analytics</b><span>SQL · Excel · Power BI · Data Analytics</span></div>
+<div class="skill reveal"><b>AI & GenAI</b><span>Gemini APIs · Prompting · AI-assisted workflows</span></div>
+<div class="skill reveal"><b>Data & Persistence</b><span>SQLite · Structured records · Local data workflows</span></div>
+<div class="skill reveal"><b>Web Utilities</b><span>Requests · BeautifulSoup4 · Web data retrieval</span></div>
+<div class="skill reveal"><b>Developer Tools</b><span>Git · GitHub · Modern development tooling</span></div>
+<div class="skill reveal"><b>Creative & Digital</b><span>Video editing · Digital content · Visual experimentation</span></div>
+</div>
+</div>
+</section>
+
+<section id="focus">
+<div class="container">
+<div class="section-head reveal"><div><div class="kicker">03 · Current Focus</div><h2>Learning by<br>building.</h2></div><p>My current development phase is about connecting multiple skills into useful, real-world projects.</p></div>
+<div class="focus">
+<div class="card reveal"><div class="icon">🧠</div><h3>AI & Intelligent Systems</h3><p>Exploring generative AI, multimodal interaction, prompt design, API integration and practical AI-assisted applications.</p></div>
+<div class="card reveal"><div class="icon">📊</div><h3>Data & Decision Systems</h3><p>Developing capabilities across SQL, Excel, Power BI and analytics to turn structured information into useful insights.</p></div>
+<div class="card reveal"><div class="icon">🛠️</div><h3>Product Building</h3><p>Combining programming, interfaces, databases and APIs to move ideas from concept to functioning digital experiences.</p></div>
+</div>
+</div>
+</section>
+
+<section id="work">
+<div class="container">
+<div class="section-head reveal"><div><div class="kicker">04 · Featured Work</div><h2>One project that<br>defines my direction.</h2></div><p>Bharat Nexus brings together search, generative AI and citizen-centric assistance inside one unified digital platform.</p></div>
+
+<!-- Project 1: Bharat Nexus -->
+<div class="project reveal">
+  <div class="project-top">
+    <div><div class="kicker">Flagship Platform</div><h2>Bharat Nexus</h2><p class="tagline">An AI-powered unified digital platform bringing information discovery, intelligent assistance and citizen-focused utilities into one interface.</p></div>
+    <div class="project-badge">Working locally · GitHub</div>
+  </div>
+  <div class="nexus-grid">
+    <div class="nexus"><div>🔎</div><h3>Bharat Search</h3><p>A hybrid search experience combining local indexed information with live web search. Requests and BeautifulSoup4 retrieve and parse web results, while AI analyses query intent.</p></div>
+    <div class="nexus"><div>🤖</div><h3>Bharat AI</h3><p>A Gemini-powered conversational assistant supporting text, images and documents, with bilingual interaction and persistent conversation history through SQLite.</p></div>
+    <div class="nexus"><div>🏛️</div><h3>Lok Sevak</h3><p>A citizen-centric assistance concept focused on making complex government documents and scheme-related information easier to understand for rural and elderly users.</p></div>
+  </div>
+  <div class="workflow">
+    <span class="step">Document / Image</span><span class="arrow">→</span><span class="step">AI Understanding</span><span class="arrow">→</span><span class="step">Hindi Explanation</span><span class="arrow">→</span><span class="step">Citizen Guidance</span>
+  </div>
+  <div class="tech-row"><span class="tech">Python</span><span class="tech">Streamlit</span><span class="tech">Google Gemini API</span><span class="tech">SQLite</span><span class="tech">Requests</span><span class="tech">BeautifulSoup4</span></div>
+  <div class="actions"><a class="btn" href="https://github.com/theshobhitsaxena/bharat-nexus" target="_blank" rel="noopener">View Bharat Nexus on GitHub ↗</a></div>
+</div>
+
+</div>
+</section>
+
+<section id="education">
+<div class="container">
+<div class="section-head reveal"><div><div class="kicker">05 · Education</div><h2>Academic foundation.</h2></div><p>A timeline of the education that forms the foundation of my professional journey.</p></div>
+<div class="education">
+<div class="edu reveal"><div class="year">2026 — Present</div><div><h3>LLB</h3><p>Mahatma Jyotiba Phule Rohilkhand University (MJPRU), Bareilly</p></div></div>
+<div class="edu reveal"><div class="year">2022 — 2025</div><div><h3>Bachelor of Computer Applications (BCA)</h3><p>Mahatma Jyotiba Phule Rohilkhand University (MJPRU), Bareilly</p></div></div>
+<div class="edu reveal"><div class="year">2022</div><div><h3>Class XII</h3><p>Shishu Vihar Inter College, Bisalpur, Pilibhit</p></div></div>
+<div class="edu reveal"><div class="year">2020</div><div><h3>Class X</h3><p>Shishu Vihar Inter College, Bisalpur, Pilibhit</p></div></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-head reveal"><div><div class="kicker">06 · Beyond Technology</div><h2>Things that keep<br>me curious.</h2></div><p>Professional growth is only one part of a person’s identity. These interests shape how I think, create and recharge.</p></div>
+<div class="interests">
+<div class="interest reveal"><h3>🎸 Playing Guitar</h3><p>Music gives me a creative space away from screens, code and structured problem-solving.</p></div>
+<div class="interest reveal"><h3>📚 Reading</h3><p>Book reading is part of my effort to continuously explore new ideas, perspectives and ways of thinking.</p></div>
+<div class="interest reveal"><h3>🎬 Visual & Digital Creativity</h3><p>Video editing and digital content experimentation help me explore storytelling beyond traditional technical work.</p></div>
+<div class="interest reveal"><h3>🔭 Curiosity & Experimentation</h3><p>I enjoy exploring new tools and technologies, especially when they can be turned into something practical.</p></div>
+</div>
+</div>
+</section>
+
+<section id="connect">
+<div class="container">
+<div class="contact reveal">
+<div class="contact-wrapper">
+  <!-- Connect Info & Links -->
+  <div>
+    <div class="kicker">07 · Let’s Connect</div>
+    <h2>Start a conversation.</h2>
+    <p>If you want to know more about my projects, AI experiments, or professional interests, feel free to drop a message or connect on my profiles.</p>
+    
+    <div class="links">
+      <a class="btn primary" href="mailto:shobhitsaxena829@gmail.com">Email me</a>
+      <a class="btn primary" style="background:var(--surface2); color:var(--text); border-color:var(--line);" href="shobhit_resume.pdf" target="_blank" rel="noopener">📄 Resume</a>
+      <a class="btn" href="https://www.linkedin.com/in/theshobhitsaxena" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn" href="https://github.com/theshobhitsaxena" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <div style="background:var(--bg); padding:30px; border-radius:24px; border:1px solid var(--line);">
+    <form action="https://formspree.io/f/xdeaepad" method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Hi Shobhit, let's talk about..." required></textarea>
+      </div>
+      <button type="submit" class="btn primary" style="width:100%; justify-content:center;">Send Message</button>
+    </form>
+  </div>
+
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer><div class="container footer"><span>© <span id="year"></span> Shobhit Saxena</span><span>Shobhit Saxena · Pilibhit, Uttar Pradesh, India</span></div></footer>
+
+<script>
+// Typing Animation Logic
+const words = ["useful digital experiences.", "AI Agents.", "Web Applications.", "intelligent tools."];
+let i = 0;
+let isDeleting = false;
+let txt = '';
+const speed = 100;
+const pause = 2000;
+
+function typeWriter() {
+  const currentWord = words[i % words.length];
+  if (isDeleting) {
+    txt = currentWord.substring(0, txt.length - 1);
+  } else {
+    txt = currentWord.substring(0, txt.length + 1);
+  }
+  document.getElementById('typewriter').textContent = txt;
+  
+  let typeSpeed = speed;
+  if (isDeleting) { typeSpeed /= 2; }
+  
+  if (!isDeleting && txt === currentWord) {
+    typeSpeed = pause;
+    isDeleting = true;
+  } else if (isDeleting && txt === '') {
+    isDeleting = false;
+    i++;
+    typeSpeed = 500;
+  }
+  setTimeout(typeWriter, typeSpeed);
+}
+window.addEventListener('load', typeWriter);
+
+// Theme Toggle
+const root=document.documentElement, theme=document.getElementById('theme');
+const saved=localStorage.getItem('theme');
+if(saved){root.dataset.theme=saved;theme.textContent=saved==='dark'?'☀':'☾'}
+theme.addEventListener('click',()=>{const next=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=next;localStorage.setItem('theme',next);theme.textContent=next==='dark'?'☀':'☾'});
+
+// Copyright Year
+document.getElementById('year').textContent=new Date().getFullYear();
+
+// Scroll Animations
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Top Progress Bar & Scroll To Top Button
+const scrollToTopBtn = document.getElementById('scrollToTop');
+window.addEventListener('scroll',()=>{
+  const h=document.documentElement.scrollHeight-innerHeight;
+  document.getElementById('progress').style.width=(scrollY/h*100)+'%';
+  
+  if (window.scrollY > 500) {
+    scrollToTopBtn.classList.add('visible');
+  } else {
+    scrollToTopBtn.classList.remove('visible');
+  }
+},{passive:true});
+
+scrollToTopBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+</body>
+</html>
